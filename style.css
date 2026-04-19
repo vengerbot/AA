@@ -1,0 +1,78 @@
+/* 
+   Signup Page Styles
+   Land for Life
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4fff4; /* light green background */
+    color: #2e4d2e;
+    text-align: center;
+    margin: 0;
+}
+
+/* Form container */
+form {
+    background-color: #ffffff;
+    width: 60%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+}
+
+/* Headings */
+h1 {
+    margin-top: 20px;
+}
+
+h2, h3 {
+    color: #2e4d2e;
+}
+
+/* Inputs */
+input, select {
+    padding: 6px;
+    margin: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Error messages */
+span {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+/* Success message */
+#successMessage {
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Link */
+a {
+    color: #2e4d2e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

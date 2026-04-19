@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup - Land for Life</title>
+
+    <!-- Link CSS files -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🌱 Land for Life</h1>
+<h2>Join Our Movement</h2>
+
+<form onsubmit="return validateForm()">
+
+    <!-- PERSONAL INFORMATION -->
+    <h3>Personal Information</h3>
+
+    Full Name:<br>
+    <input type="text" id="fullName" onblur="validateForm()">
+    <span id="nameError"></span><br>
+
+    Birthdate:<br>
+    <input type="date" id="birthdate">
+    <span id="birthError"></span><br>
+
+    Sex:<br>
+    <input type="radio" name="sex" value="male"> Male
+    <input type="radio" name="sex" value="female"> Female
+    <span id="sexError"></span><br>
+
+    Email:<br>
+    <input type="email" id="email">
+    <span id="emailError"></span><br>
+
+
+    <!-- ACCOUNT DETAILS -->
+    <h3>Account Details</h3>
+
+    Username:<br>
+    <input type="text" id="username">
+    <span id="userError"></span><br>
+
+    Password:<br>
+    <input type="password" id="password">
+    <span id="passError"></span><br>
+
+    Confirm Password:<br>
+    <input type="password" id="confirmPassword">
+    <span id="confirmError"></span><br>
+
+
+    <!-- TOPIC QUESTIONS -->
+    <h3>Your Environmental Interests</h3>
+
+    Main Concern:<br>
+    <select id="issue">
+        <option value="">-- choose --</option>
+        <option value="climate">Climate Change</option>
+        <option value="wildlife">Wildlife Protection</option>
+        <option value="pollution">Pollution</option>
+    </select>
+    <span id="issueError"></span><br>
+
+    Actions You Support:<br>
+    <input type="checkbox" name="actions"> Tree Planting
+    <input type="checkbox" name="actions"> Recycling
+    <input type="checkbox" name="actions"> Cleanups
+    <span id="actionError"></span><br>
+
+    How often do you help?<br>
+    <input type="radio" name="frequency"> Daily
+    <input type="radio" name="frequency"> Weekly
+    <input type="radio" name="frequency"> Rarely
+    <span id="freqError"></span><br><br>
+
+
+    <button type="submit">Join us and protect the Earth </button>
+
+    <p id="successMessage"></p>
+
+</form>
+
+<br>
+<a href="index.html">⬅ Back to Home</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
